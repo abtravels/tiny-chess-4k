@@ -9,7 +9,8 @@ iterative deepening under a fixed 75,000-node budget, transposition table,
 killer-move and history-heuristic ordering with MVV-LVA, check extensions,
 quiescence with delta pruning and reverse futility pruning, tapered
 middlegame/endgame material + piece-square evaluation with a bishop-pair
-bonus. No clock, no unseeded randomness — every move derives from the
+bonus and a king pawn-shield term (missing shield pawns penalised in the
+middlegame). No clock, no unseeded randomness — every move derives from the
 position and the trial seed, so replays match. `main.py` is the kit's own
 makefun-compress pack of `engine.py`: an LZMA stream that unpacks and runs
 the engine.
